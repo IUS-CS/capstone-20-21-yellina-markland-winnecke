@@ -4,5 +4,7 @@ We will be making a website for a club called 40 and 8 this is a bar/club that i
 
 ## Project Members
 Drew Yellina - Team Lead
+
 Jakob Markland
+
 Bryce Winnecke 
