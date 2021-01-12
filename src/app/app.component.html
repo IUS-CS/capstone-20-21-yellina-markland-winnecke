@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+  <a class="navbar-brand" style="color:black" href="#">40 & 8 <img height="20" width="20" src="/images/40&8Crest.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul ngbNav routerLinkActive="active">
+      <li ngbNavItem="homePage">
+        <a ngbNavLink class="btn-warning" routerLink="homePage">Home</a>
+      </li>
+      <li ngbNavItem="newsAndEvents">
+        <a ngbNavLink class="btn-warning" routerLink="newsAndEvents">News & Events</a>
+      </li>
+      <li ngbNavItem="leadingMembersInformation">
+        <a ngbNavLink class="btn-warning" routerLink="leadingMembersInformation">Leading Members</a>
+      </li>
+      <li ngbNavItem="membershipInterest">
+        <a ngbNavLink class="btn-warning" routerLink="membershipInterest">Membership Interest</a>
+      </li>
+      <li ngbNavItem="information">
+        <a ngbNavLink class="btn-warning" routerLink="information">Information</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <hr>
+  <router-outlet></router-outlet>
+</div>

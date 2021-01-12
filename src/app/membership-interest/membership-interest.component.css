@@ -1,0 +1,23 @@
+.card-add-member {
+  float: left;
+  padding-left: 10px;
+  margin-inside: 10px;
+}
+
+input {
+  margin: 1px 10px 5px;
+  width: 95%;
+}
+
+label {
+  margin-left: 5px;
+}
+
+button {
+  margin: 10px;
+}
+
+h3 {
+  margin-left: 5px;
+  margin-top: 10px;
+}

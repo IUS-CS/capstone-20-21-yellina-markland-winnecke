@@ -1,0 +1,86 @@
+<p>If you are interested in a Membership, complete the form below.</p>
+<form [formGroup]="person">
+  <div class="card-membership-interest" style="width: 30rem;">
+    <div class="card">
+      <div class="member-firstName-form">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" formControlName="firstName" placeholder="Donald">
+        <div [hidden]="person.controls.firstName.valid || person.controls.firstName.pristine" class="alert alert-danger">
+          A valid First Name is required
+        </div>
+      </div>
+      <div class="member-lastName-form">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" formControlName="lastName" placeholder="Trump">
+        <div [hidden]="person.controls.lastName.valid || person.controls.LastName.pristine" class="alert alert-danger">
+          A valid Last Name is required
+        </div>
+      </div>
+      <div class="member-address-form">
+        <label for="address">Address:</label>
+        <input type="text"id="address" formControlName="address" placeholder="1600 Pennsylvania Avenue">
+        <div [hidden]="person.controls.address.valid || person.controls.address.pristine" class="alert alert-danger">
+          A valid Address is required
+        </div>
+      </div>
+      <div class="member-state-form">
+        <label for="state">State:</label>
+        <input type="text" id="state" formControlName="state" placeholder="IN">
+        <div [hidden]="person.controls.state.valid || person.controls.state.pristine" class="alert alert-danger">
+          A valid State is required
+        </div>
+      </div>
+      <div class="member-city-form">
+        <label for="city">City:</label>
+        <input type="text" id="city" formControlName="city" placeholder="New Albany">
+        <div [hidden]="person.controls.city.valid || person.controls.city.pristine" class="alert alert-danger">
+          A valid City is required
+        </div>
+      </div>
+      <div class="member-zip-form">
+        <label for="zip">Zip Code:</label>
+        <input type="number" id="zip" formControlName="zip" placeholder="47150">
+        <div [hidden]="person.controls.zip.valid || person.controls.zip.pristine" class="alert alert-danger">
+          A valid Zip Code is required
+        </div>
+      </div>
+      <div class="member-country-form">
+        <label for="country">Country:</label>
+        <input type="text" id="country" formControlName="country" placeholder="USA">
+        <div [hidden]="person.controls.country.valid || person.controls.country.pristine" class="alert alert-danger">
+          A valid Country is required
+        </div>
+      </div>
+      <div class="member-email-form">
+        <label for="email">Email:</label>
+        <input type="text" id="email" formControlName="email" placeholder="jackwilliams@gmail.com">
+        <div [hidden]="person.controls.email.valid || person.controls.email.pristine" class="alert alert-danger">
+          A valid Email is required
+        </div>
+      </div>
+      <div class="member-phone-form">
+        <label for="phoneNumber">Phone:(Enter your # with the '-' in between the numbers)</label>
+        <input type="phone" id="phoneNumber" formControlName="phoneNumber" placeholder="502-987-1234">
+        <div [hidden]="person.controls.phoneNumber.valid || person.controls.phoneNumber.pristine" class="alert alert-danger">
+          A valid Phone Number is required
+        </div>
+      </div>
+      <div class="employee-countryOfResidence-form">
+        <label for="countryOfResidence">Country of Residence:</label>
+        <input type="text" id="countryOfResidence" formControlName="countryOfResidence" placeholder="US">
+        <div [hidden]="person.controls.countryOfResidence.valid || person.controls.countryOfResidence.pristine" class="alert alert-danger">
+          A Country of Residence is required
+        </div>
+      </div>
+      <div class="member-referral-form">
+        <label for="referral">Who were you referred by?:</label>
+        <input type="text" id="referral" formControlName="referral" placeholder="George Washington">
+        <div [hidden]="person.controls.referral.valid || person.controls.referral.pristine" class="alert alert-danger">
+          A valid Referral is required
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+
