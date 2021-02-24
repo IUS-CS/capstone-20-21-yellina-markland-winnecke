@@ -10,7 +10,9 @@ import { MembershipInterestComponent } from './membership-interest/membership-in
 import { LeadingMembersInformationComponent } from './leading-members-information/leading-members-information.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AdminComponent } from './admin/admin.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,16 @@ import {ReactiveFormsModule} from '@angular/forms';
     InformationComponent,
     MembershipInterestComponent,
     LeadingMembersInformationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AdminComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
