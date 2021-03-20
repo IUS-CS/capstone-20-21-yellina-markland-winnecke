@@ -6,6 +6,8 @@ import {LeadingMembersInformationComponent} from './leading-members-information/
 import {MembershipInterestComponent} from './membership-interest/membership-interest.component';
 import {InformationComponent} from './information/information.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {AdminComponent} from './admin/admin.component';
+import {AdminPageComponent} from './admin-page/admin-page.component';
 
 
 const routes: Routes = [
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'membershipInterest', component: MembershipInterestComponent },
   { path: 'information', component: InformationComponent },
   { path: '', redirectTo: '/homePage', pathMatch: 'full' },
+  { path: 'admin', component: AdminComponent},
+  { path: 'admin-page', component: AdminPageComponent},
   { path: '**', component: PageNotFoundComponent},
 ];
 

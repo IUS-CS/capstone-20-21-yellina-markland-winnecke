@@ -1,0 +1,14 @@
+
+<form ng-app="validation">
+  <div class="form-group">
+    <label name="user" class="user"> UserName: </label>
+    <input type="text" name="user" [(ngModel)]="userAdmin">
+    <label name="pass" class="pass"> Password:</label>
+    <input type="text" name="pass" [(ngModel)]="passAdmin">
+    <button type="submit" (click)="check(userAdmin,passAdmin)">Submit </button>
+  </div>
+</form>
+<div *ngIf="valid" ></div>
+<ng-template #elseStatement>
+  Invalid Username or Password
+</ng-template>
