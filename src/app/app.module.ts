@@ -10,6 +10,7 @@ import { MembershipInterestComponent } from './membership-interest/membership-in
 import { LeadingMembersInformationComponent } from './leading-members-information/leading-members-information.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgImageSliderModule } from 'ng-image-slider';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
@@ -31,6 +32,7 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    NgImageSliderModule,
     ReactiveFormsModule,
     FormsModule,
   ],
