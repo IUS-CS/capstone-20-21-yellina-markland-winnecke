@@ -14,7 +14,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
-
+import { AgmCoreModule} from '@agm/core';
+import { AgmDirectionModule} from 'agm-direction';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,10 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
     NgImageSliderModule,
     ReactiveFormsModule,
     FormsModule,
+    AgmCoreModule.forRoot({ // @agm/core
+      apiKey: 'AIzaSyA6BGS-Zy0mtveqarMMNTJnUcLI0caK3z8', // temporary test API key
+    }),
+    AgmDirectionModule,     // agm-direction
   ],
   providers: [],
   bootstrap: [AppComponent]

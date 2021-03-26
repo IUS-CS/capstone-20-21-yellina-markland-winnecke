@@ -6,7 +6,7 @@
 </p>
 <br>
 <h3>Photo Gallery</h3>
-<div style="width: 840px; height: 500px; text-align:center;margin:0; padding:0;">
+<div style="width: 840px; height: 300px; text-align:center;margin:0; padding:0;">
   <ng-image-slider #nav
                    [images]="imageObject"
                    [infinite]="true"
@@ -14,4 +14,15 @@
                    [imageSize]="{width: '50%', height: 250, space: 12}"
                    slideImage="1"></ng-image-slider>
 </div>
+<br>
+<h3>Directions</h3>
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-direction
+    [origin]="origin"
+    [destination]="destination"
+  >
+  </agm-direction>
+</agm-map>
+
+<br>
 <button   (click)="goToPage()"> ADMIN LOGIN</button>
