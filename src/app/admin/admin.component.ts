@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router} from '@angular/router';
+import { Router, ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -19,10 +19,10 @@ export class AdminComponent implements OnInit {
   check(user: string, pass: string): void {
     console.log(this.User === user);
     console.log(this.Pass === pass);
-    if (this.User === user && this.Pass === pass)
-    {
+    if (this.User === user && this.Pass === pass) {
       this.valid = true;
-      this.router.navigate(['/admin-page']);
+    } else{
+      this.valid = false;
     }
   }
 

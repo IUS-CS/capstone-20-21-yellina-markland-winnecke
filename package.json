@@ -23,6 +23,7 @@
     "@angular/router": "~10.0.3",
     "@ng-bootstrap/ng-bootstrap": "^8.0.4",
     "agm-direction": "^0.8.9",
+    "auth0-js": "^9.15.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
