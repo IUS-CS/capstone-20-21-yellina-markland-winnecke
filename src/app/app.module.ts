@@ -37,7 +37,7 @@ import { AgmDirectionModule} from 'agm-direction';
     ReactiveFormsModule,
     FormsModule,
     AgmCoreModule.forRoot({ // @agm/core
-      apiKey: 'AIzaSyA6BGS-Zy0mtveqarMMNTJnUcLI0caK3z8', // temporary test API key
+      apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // temporary test API key (bwwinnec@iu.edu account)
     }),
     AgmDirectionModule,     // agm-direction
   ],

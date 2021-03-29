@@ -16,12 +16,30 @@
 </div>
 <br>
 <h3>Directions</h3>
-<agm-map [latitude]="lat" [longitude]="lng">
+<button (click)="getDirection()"> Get Directions</button>
+<br>
+<br>
+<agm-map
+  [zoom]="zoom"
+  [latitude]="lat"
+  [longitude]="lng">
+
   <agm-direction
     [origin]="origin"
-    [destination]="destination"
-  >
+    [destination]="destination">
   </agm-direction>
+
+  <agm-marker
+    *ngFor="let m of markers; let i = index"
+    (markerClick)="clickedMarker(m.label, i)"
+    [latitude]="m.lat"
+    [longitude]="m.lng"
+    [label]="m.label"
+    [markerDraggable]="m.draggable">
+    <agm-info-window>
+      <strong>Forty And Eight Voiture 1250</strong>
+    </agm-info-window>
+  </agm-marker>
 </agm-map>
 
 <br>
