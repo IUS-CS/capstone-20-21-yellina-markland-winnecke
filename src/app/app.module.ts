@@ -15,6 +15,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { AgmCoreModule} from '@agm/core';
 import { AgmDirectionModule} from 'agm-direction';
+import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AgmDirectionModule} from 'agm-direction';
     PageNotFoundComponent,
     AdminComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -39,7 +41,7 @@ import { AgmDirectionModule} from 'agm-direction';
     }),
     AgmDirectionModule,     // agm-direction
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
