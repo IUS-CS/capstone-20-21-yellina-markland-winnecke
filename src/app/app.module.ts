@@ -13,7 +13,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
-import { AdminPageComponent } from './admin-page/admin-page.component';
 import { AgmCoreModule} from '@agm/core';
 import { AgmDirectionModule} from 'agm-direction';
 
@@ -27,7 +26,6 @@ import { AgmDirectionModule} from 'agm-direction';
     LeadingMembersInformationComponent,
     PageNotFoundComponent,
     AdminComponent,
-    AdminPageComponent
   ],
   imports: [
     BrowserModule,

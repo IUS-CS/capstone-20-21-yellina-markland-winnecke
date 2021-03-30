@@ -8,7 +8,15 @@
     <button type="submit" (click)="check(userAdmin,passAdmin)">Submit </button>
   </div>
 </form>
-<div *ngIf="valid" ></div>
+<div *ngIf="valid" > Valid Login</div>
 <ng-template #elseStatement>
   Invalid Username or Password
 </ng-template>
+<div *ngIf="valid">
+  <label name="calendar"> Calendar</label>
+  <p></p>
+  <textarea class="calendar"> </textarea>
+  <p></p>
+  <label name="officers"> Officers</label>
+  <p></p>
+</div>

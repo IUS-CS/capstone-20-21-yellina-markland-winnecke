@@ -7,7 +7,7 @@ import {MembershipInterestComponent} from './membership-interest/membership-inte
 import {InformationComponent} from './information/information.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {AdminComponent} from './admin/admin.component';
-import {AdminPageComponent} from './admin-page/admin-page.component';
+import {AuthGuardService} from './service/auth-guard.service';
 
 
 const routes: Routes = [
@@ -18,7 +18,6 @@ const routes: Routes = [
   { path: 'information', component: InformationComponent },
   { path: '', redirectTo: '/homePage', pathMatch: 'full' },
   { path: 'admin', component: AdminComponent},
-  { path: 'admin-page', component: AdminPageComponent},
   { path: '**', component: PageNotFoundComponent},
 ];
 
