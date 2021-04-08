@@ -37,7 +37,11 @@ import { HashLocationStrategy, LocationStrategy} from '@angular/common';
     ReactiveFormsModule,
     FormsModule,
     AgmCoreModule.forRoot({ // @agm/core
-      apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // temporary test API key (bwwinnec@iu.edu account)
+      // fortyandeightv1250 account API key
+      // only accepts Maps Javascript API requests
+      // only accepts requests from fortyandeightnewalbany.com
+      apiKey: 'AIzaSyCbCJwLsf18SNiRmVjsYpPzb1jpOLAKvqM',
+      //apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // bwwinnec account temp key - restricted, will delete
     }),
     AgmDirectionModule,     // agm-direction
   ],
