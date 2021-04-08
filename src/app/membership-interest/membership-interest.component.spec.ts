@@ -19,7 +19,12 @@ describe('MembershipInterestComponent', () => {
     fixture.detectChanges();
   });
 
-  //it('should create', () => {
-    //expect(component).toBeTruthy();
-  //});
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should render title in a h5 tag', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h5').textContent).toContain('If you are interested in a Membership, complete the form below.');
+  });
 });

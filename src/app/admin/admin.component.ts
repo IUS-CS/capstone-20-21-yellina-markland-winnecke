@@ -16,6 +16,7 @@ export class AdminComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   check(user: string, pass: string): void {
     console.log(this.User === user);
     console.log(this.Pass === pass);
