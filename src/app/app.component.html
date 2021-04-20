@@ -1,11 +1,11 @@
-
+<!--
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <a class="navbar-brand" style="color:black" href="#">40 & 8 <img height="24" width="24" src="assets/img/40&8Crest.png"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button"  (click)="isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
     <ul ngbNav routerLinkActive="active">
       <li ngbNavItem="homePage">
         <a ngbNavLink class="btn-warning" routerLink="homePage">Home</a>
@@ -41,4 +41,44 @@
 </div>
 
 
+-->
+<nav class="navbar navbar-expand-md navbar-dark bg-warning">
+  <a class="navbar-brand" style="color:black" href="#">40 & 8 <img height="24" width="24" src="assets/img/40&8Crest.png"></a>
+  <button class="navbar-toggler d-lg-none" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto" routerLinkActive="active" >
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/homePage']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['/newsAndEvents']">News and Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/leadingMembersInformation']">Leading Members</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/membershipInterest']">Membership Interest</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/information']">Information</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<p></p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="https://www.facebook.com/40-8-Voiture-1250-108930611287225" class="fa fa-facebook"></a>
+<div class="container">
+  <hr>
+  <router-outlet></router-outlet>
+</div>
+
+<div class="content">
+  <span>
+
+  </span>
+</div>
+<router-outlet></router-outlet>

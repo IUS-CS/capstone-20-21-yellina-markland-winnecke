@@ -14,6 +14,14 @@
   color: white;
   float: left;
 }
+.navbar
 {
-
+  position: relative;
+}
+.navbar-dark .navbar-nav .nav-link{
+  font-weight: bold;
+  color: black;
+}
+.navbar-brand{
+  font-weight: bold;
 }

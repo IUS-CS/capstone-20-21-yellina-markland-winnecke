@@ -5,12 +5,16 @@
 }
 
 input {
-  margin: 1px 10px 5px;
+  text-align: center;
   width: 95%;
 }
-
-label {
-  margin-left: 5px;
+.heading{
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.inputboxes {
+  padding-left: 70px;
 }
 
 button {
@@ -22,16 +26,20 @@ h3 {
   margin-top: 10px;
 }
 .message {
-  width: 700px;
+  width: 500px;
   height: 50px;
   align-content: center;
   display: block;
   margin-right: auto;
+  padding-right: 10px;
+}
+
+.txtbox {
+  width: 500px;
+}
+.contactform {
+  right:40px;
 }
 .label {
-  margin-right: auto;
-  margin-left: auto;
-}
-.txtbox {
-
+  font-weight: bold;
 }
