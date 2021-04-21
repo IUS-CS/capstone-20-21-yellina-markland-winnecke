@@ -41,8 +41,8 @@ import { HashLocationStrategy, LocationStrategy} from '@angular/common';
       // fortyandeightv1250 account API key
       // only accepts Maps Javascript API requests
       // only accepts requests from fortyandeightnewalbany.com
-      apiKey: 'AIzaSyCbCJwLsf18SNiRmVjsYpPzb1jpOLAKvqM',
-      // apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // bwwinnec account temp key - restricted, will delete
+      // apiKey: 'AIzaSyCbCJwLsf18SNiRmVjsYpPzb1jpOLAKvqM', // fortyandeight account key - deleted
+      // apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // bwwinnec account temp key - deleted
     }),
     AgmDirectionModule,     // agm-direction
   ],
