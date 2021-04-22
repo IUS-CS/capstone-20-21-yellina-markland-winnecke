@@ -1,3 +1,4 @@
+import { MbscModule } from '@mobiscroll/angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -29,7 +30,8 @@ import { HashLocationStrategy, LocationStrategy} from '@angular/common';
     AdminComponent,
   ],
 
-  imports: [
+  imports: [ 
+    MbscModule, 
     BrowserModule,
     AppRoutingModule,
     NgbModule,
