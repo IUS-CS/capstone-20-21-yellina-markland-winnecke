@@ -1,5 +1,5 @@
 import { MbscModule } from '@mobiscroll/angular';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,7 +10,7 @@ import { InformationComponent } from './information/information.component';
 import { MembershipInterestComponent } from './membership-interest/membership-interest.component';
 import { LeadingMembersInformationComponent } from './leading-members-information/leading-members-information.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
@@ -38,16 +38,17 @@ import { HashLocationStrategy, LocationStrategy} from '@angular/common';
     NgImageSliderModule,
     ReactiveFormsModule,
     FormsModule,
+    NgbCollapseModule,
     AgmCoreModule.forRoot({ // @agm/core
       // fortyandeightv1250 account API key
       // only accepts Maps Javascript API requests
       // only accepts requests from fortyandeightnewalbany.com
-      apiKey: 'AIzaSyCbCJwLsf18SNiRmVjsYpPzb1jpOLAKvqM',
-      //apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // bwwinnec account temp key - restricted, will delete
+      // apiKey: 'AIzaSyCbCJwLsf18SNiRmVjsYpPzb1jpOLAKvqM', // fortyandeight account key - deleted
+      // apiKey: 'AIzaSyAZ5xWwEJi3nLhtKiTW83MA4tpvsZP7pZg', // bwwinnec account temp key - deleted
     }),
     AgmDirectionModule,     // agm-direction
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [Title, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

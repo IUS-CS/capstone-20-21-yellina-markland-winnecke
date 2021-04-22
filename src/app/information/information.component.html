@@ -1,24 +1,29 @@
-<h3>Location Information</h3>
+<h3 class="heading">Location Information</h3>
+<div class="locationinfo">
 <p>Forty and Eight Voiture 1250
 	<br>221 Albany St.
 	<br>New Albany, IN 47150
 	<br>812-948-9730
 </p>
+</div>
 <br>
 <h3>Photo Gallery</h3>
-<div style="width: 840px; height: 300px; text-align:center;margin:0; padding:0;">
+<br>
+<div style="width: 1400px; height: 300px; text-align:center;margin:0; padding:0;">
   <ng-image-slider #nav
                    [images]="imageObject"
                    [infinite]="true"
                    [autoSlide]="0"
-                   [imageSize]="{width: '50%', height: 250, space: 12}"
+                   [imageSize]="{width: '25%', height: '25%', space: 12}"
                    slideImage="1"></ng-image-slider>
 </div>
 <br>
-<h3>Directions</h3>
 <!--
- <button (click)="getDirection()"> Get Directions</button> -->
+<h3>Directions</h3>
+
+ <button (click)="getDirection()"> Get Directions</button>
 <br>
+
 <agm-map
   [zoom]="zoom"
   [latitude]="lat"
@@ -42,5 +47,5 @@
   </agm-marker>
 </agm-map>
 
-<br>
+<br> -->
 <button   (click)="goToPage()"> ADMIN LOGIN</button>

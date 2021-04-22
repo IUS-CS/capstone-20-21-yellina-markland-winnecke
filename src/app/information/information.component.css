@@ -1,3 +1,9 @@
 agm-map {
   height: 400px;
 }
+.locationinfo{
+  padding-left: 70px;
+}
+.heading{
+  text-align: center;
+}

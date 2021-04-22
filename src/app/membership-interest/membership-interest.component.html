@@ -1,4 +1,4 @@
-<h5>If you are interested in a Membership, complete the form below.</h5>
+<h5 class="heading">If you are interested in a Membership, complete the form below.</h5>
 <!--
 <form [formGroup]="person">
   <div class="card-membership-interest" style="width: 30rem;">
@@ -145,20 +145,42 @@
          class ="form-control mb-4" placeholder="First Name">
 </form>
 -->
-<form class="contact=form" (submit)="sendEmail($event)">
+<form class="contactform" (submit)="sendEmail($event)">
+  <div class="inputboxes">
   <label class="label"> First Name</label>
+  <p></p>
   <input class="txtbox" type="text" name="firstName">
+  <p></p>
+  </div>
+  <div class="inputboxes">
   <label class="label"> Last Name</label>
+  <p></p>
   <input class="txtbox" type="text" name="lastName">
+  <p></p>
+  </div>
+  <div class="inputboxes">
   <label class="label"> Email</label>
+  <p></p>
   <input class="txtbox" type="email" name="email">
+  <p></p>
+  </div>
+  <div class="inputboxes">
   <label class="label"> Phone Number</label>
+  <p></p>
   <input class="txtbox" type="number" name="phoneNumber">
+  <p></p>
+  </div>
+  <div class="inputboxes">
   <label class="label"> Referred By</label>
+  <p></p>
   <input class="txtbox" type="name" name="referral">
+  <p></p>
+  </div>
+  <div class="inputboxes">
   <label class="label"> Message</label>
   <div></div>
   <textarea class="message"   name="message"></textarea>
   <p></p>
   <input class="txtbox" type="submit" value="Send">
+  </div>
 </form>

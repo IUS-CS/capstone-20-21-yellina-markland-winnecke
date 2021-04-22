@@ -17,9 +17,41 @@ export class InformationComponent implements OnInit {
     image: 'assets/img/img3.jpg',
     thumbImage: 'assets/img/img3.jpg'
   }, {
-    video: 'https://youtu.be/Gld0XCDxDFE',
-    title: 'New Albany',
-    alt: 'yt video'
+    image: 'assets/img/img4.jpg',
+    thumbImage: 'assets/img/img4.jpg'
+  }, {
+    image: 'assets/img/img5.jpg',
+    thumbImage: 'assets/img/img5.jpg'
+  }, {
+    image: 'assets/img/img6.jpg',
+    thumbImage: 'assets/img/img6.jpg'
+  }, {
+    image: 'assets/img/img7.jpg',
+    thumbImage: 'assets/img/img7.jpg'
+  }, {
+    image: 'assets/img/img8.jpg',
+    thumbImage: 'assets/img/img8.jpg'
+  }, {
+    image: 'assets/img/img9.jpg',
+    thumbImage: 'assets/img/img9.jpg'
+  }, {
+    image: 'assets/img/img10.jpg',
+    thumbImage: 'assets/img/img10.jpg'
+  }, {
+    image: 'assets/img/img11.jpg',
+    thumbImage: 'assets/img/img11.jpg'
+  }, {
+    image: 'assets/img/img12.jpg',
+    thumbImage: 'assets/img/img12.jpg'
+  }, {
+    image: 'assets/img/img13.jpg',
+    thumbImage: 'assets/img/img13.jpg'
+  }, {
+    image: 'assets/img/img14.jpg',
+    thumbImage: 'assets/img/img14.jpg'
+  }, {
+    image: 'assets/img/img15.jpg',
+    thumbImage: 'assets/img/img15.jpg'
   }];
   constructor(private router: Router) { }
 
@@ -36,10 +68,6 @@ export class InformationComponent implements OnInit {
   getDirection(): void {
     this.origin = { lat: 38.29583127892305, lng: -85.8297131673367 };
     this.destination = { lat: 38.29682357886059, lng: -85.83484997139513 };
-
-    // Location within a string
-    // this.origin = 'Taipei Main Station';
-    // this.destination = 'Taiwan Presidential Office';
   }
 
   goToPage(): void
